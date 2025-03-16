@@ -1,8 +1,8 @@
 // roles
-const role = {
-  admin: "admin",
-  user: "user",
-} as const;
+declare const role: Readonly<{
+  admin: "admin";
+  user: "user";
+}>;
 
 type TKeyRole = keyof typeof role;
 
