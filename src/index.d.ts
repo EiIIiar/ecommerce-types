@@ -1,4 +1,14 @@
-// Complete interface for user
+// roles
+const role = {
+  admin: "admin",
+  user: "user",
+} as const;
+
+type TKeyRole = keyof typeof role;
+
+type TValueRoles = (typeof role)[keyof typeof role];
+
+// user
 export interface IUser {
   id: string;
   userName: string;
