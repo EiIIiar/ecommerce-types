@@ -1,5 +1,5 @@
 {
-  "name": "@types/ecommerce",
+  "name": "types-ecommerce",
   "version": "1.0.1",
   "description": "TypeScript definitions for ecomm project",
   "main": "",
