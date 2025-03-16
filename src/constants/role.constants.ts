@@ -3,4 +3,6 @@ export const role = {
   user: "user",
 } as const;
 
-export type TRole = keyof typeof role;
+export type TKeyRole = keyof typeof role;
+
+export type TValueRoles = (typeof role)[keyof typeof role];
