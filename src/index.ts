@@ -22,8 +22,8 @@ export interface IUser {
 
 // Interface for create (id, createdAt, and updatedAt are omitted)
 export interface IUserCreate
-  extends Omit<IUser, "id" | "token" | "createdAt" | "updatedAt" | "expireAt"> {}
+  extends Omit<IUser, "id" | "token" | "createdAt" | "updatedAt" | "expiresIn"> {}
 
 // Interface for update (userName is omitted, other fields are optional)
 export interface IUserUpdate
-  extends Partial<Omit<IUser, "id" | "createdAt" | "updatedAt" | "userName">> {}
+  extends Partial<Omit<IUser, "id" | "createdAt" | "updatedAt" | "user">> {}

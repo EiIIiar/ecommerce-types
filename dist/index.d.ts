@@ -11,8 +11,8 @@ export interface IUser {
     createdAt: Date;
     updatedAt: Date;
 }
-export interface IUserCreate extends Omit<IUser, "id" | "token" | "createdAt" | "updatedAt" | "expireAt"> {
+export interface IUserCreate extends Omit<IUser, "id" | "token" | "createdAt" | "updatedAt" | "expiresIn"> {
 }
-export interface IUserUpdate extends Partial<Omit<IUser, "id" | "createdAt" | "updatedAt" | "userName">> {
+export interface IUserUpdate extends Partial<Omit<IUser, "id" | "createdAt" | "updatedAt" | "user">> {
 }
 //# sourceMappingURL=index.d.ts.map
