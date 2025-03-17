@@ -11,15 +11,18 @@ export type TValueRoles = (typeof role)[keyof typeof role];
 // user
 export interface IUser {
   id: string;
-  userName: string;
+  user: string;
   password: string;
-  role: string;
+  role: TValueRoles;
+  token: string;
+  expireAt: Date;
   createdAt: Date;
   updatedAt: Date;
 }
 
 // Interface for create (id, createdAt, and updatedAt are omitted)
-export interface IUserCreate extends Omit<IUser, "id" | "createdAt" | "updatedAt"> {}
+export interface IUserCreate
+  extends Omit<IUser, "id" | "token" | "createdAt" | "updatedAt" | "expireAt"> {}
 
 // Interface for update (userName is omitted, other fields are optional)
 export interface IUserUpdate
