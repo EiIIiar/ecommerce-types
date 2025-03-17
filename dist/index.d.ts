@@ -7,7 +7,7 @@ export interface IUser {
     password: string;
     role: TValueRoles;
     token: string;
-    expiresIn: Date;
+    expiresIn: string;
     createdAt: Date;
     updatedAt: Date;
 }
